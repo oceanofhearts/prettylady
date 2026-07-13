@@ -3,126 +3,140 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f8d3dd">
-  <meta name="description" content="A tiny universe made for Shiwali, with admiration and friendship.">
-  <title>A little universe for Shiwali</title>
+  <meta name="theme-color" content="#160914">
+  <meta name="description" content="A celebration of Shiwali: superwoman, best friend, and the loveliest force of nature.">
+  <title>Shiwali — My Superwoman</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@300;400;500;600&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="preload" href="assets/images/superwoman-hero-v1.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="assets/images/real-rose-v2.webp" as="image" type="image/webp">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT@9..144,300..800,0..100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
-  <canvas id="three-bg-canvas" aria-hidden="true"></canvas>
   <div class="cursor-glow" aria-hidden="true"></div>
 
-  <div class="progress" aria-hidden="true">
-    <span class="progress__label">a little universe for you</span>
-    <span class="progress__track"><i></i></span>
-  </div>
+  <header class="topbar">
+    <a class="topbar__mark" href="#hero" aria-label="Back to the beginning">S<span>♡</span></a>
+    <div class="progress" aria-hidden="true"><i></i></div>
+  </header>
 
   <main>
-    <section class="scene hero" id="hello" aria-labelledby="hello-title">
-      <div class="hero-petals" aria-hidden="true"></div>
-      <div class="hero__halo" aria-hidden="true"><i></i><i></i><i></i></div>
-      <p class="eyebrow hero__eyebrow">Psst… someone made this for you</p>
-      <div class="hero__copy">
-        <h1 id="hello-title"><span>Hello,</span><strong>Shiwali.</strong></h1>
-        <p class="hero__aside">Yes, this entire little universe.</p>
+    <section class="scene hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__rays" aria-hidden="true"></div>
+      <div class="hero__stars" aria-hidden="true"><i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>✦</i></div>
+      <div class="hero__content">
+        <p class="kicker">This story begins with a hero</p>
+        <h1 id="hero-title"><span>SUPER</span><strong>WOMAN</strong></h1>
+        <p class="hero__name">also known as <em>Shiwali</em></p>
+        <p class="hero__intro">Braver than she knows. Kinder than the world deserves.<br>And somehow, still my favourite human.</p>
+        <a class="hero__cta" href="#powers"><span>Meet my superwoman</span><i>↓</i></a>
       </div>
-      <div class="hero__door" aria-hidden="true">
-        <div class="hero__door-edge"></div>
-        <img src="assets/images/peek-doll-v2.webp" alt="" class="hero__doll" width="720" height="1080">
-        <span class="hero__doll-note">hi! ♡</span>
+
+      <div class="hero__portrait" aria-hidden="true">
+        <div class="hero__energy"><i></i><i></i><i></i></div>
+        <img src="assets/images/superwoman-hero-v1.webp" alt="" width="1717" height="916" fetchpriority="high" decoding="async">
       </div>
-      <div class="hero__footer">
-        <span class="hero__truth">you are the prettiest</span>
-        <a href="#matter" class="scroll-cue" aria-label="Continue to the next message">
-          <span>come with me</span><i></i>
-        </a>
+
+      <div class="emblem" aria-hidden="true">
+        <div class="emblem__cape"></div>
+        <div class="emblem__diamond"><span>S</span></div>
+        <p>strength · soul · Shiwali</p>
+      </div>
+
+      <p class="hero__note">No cape required.</p>
+    </section>
+
+    <section class="scene powers" id="powers" aria-labelledby="powers-title">
+      <div class="powers__heading">
+        <p class="kicker">Her real superpowers</p>
+        <h2 id="powers-title">She makes the<br>ordinary <em>wonderful.</em></h2>
+      </div>
+      <div class="power-grid">
+        <article class="power-card power-card--01">
+          <span>01</span><i aria-hidden="true">◆</i>
+          <h3>Unshakable<br>strength</h3>
+          <p>She gets back up, carries on, and makes courage look beautifully effortless.</p>
+        </article>
+        <article class="power-card power-card--02">
+          <span>02</span><i aria-hidden="true">♥</i>
+          <h3>A golden<br>heart</h3>
+          <p>She notices, she cares, she stays. Her kindness is a power all on its own.</p>
+        </article>
+        <article class="power-card power-card--03">
+          <span>03</span><i aria-hidden="true">✦</i>
+          <h3>Her own<br>kind of light</h3>
+          <p>Rooms feel warmer, hard days feel lighter, and life feels better when she is there.</p>
+        </article>
+      </div>
+      <p class="powers__aside">and these are only the powers I could fit on one page…</p>
+    </section>
+
+    <section class="scene manifesto" aria-label="A reminder for Shiwali">
+      <div class="manifesto__orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="kicker">Official hero reminder</p>
+      <p class="manifesto__line">Strong, <em>even when tired.</em></p>
+      <p class="manifesto__line">Brilliant, <em>even when unsure.</em></p>
+      <p class="manifesto__line">Wonderful, <em>every single day.</em></p>
+      <p class="manifesto__sign">That is you, Shiwali. Always has been. ♡</p>
+    </section>
+
+    <section class="softness" aria-label="Flowers for Shiwali">
+      <div class="softness__copy">
+        <p class="kicker">But even superwomen</p>
+        <h2>deserve<br><em>soft things.</em></h2>
+        <p>So I brought you a few flowers…</p>
+      </div>
+      <div class="softness__rose" aria-hidden="true">
+        <img src="assets/images/real-rose-v2.webp" alt="" width="700" height="700">
       </div>
     </section>
 
-    <section class="scene matter" id="matter" aria-labelledby="matter-title">
-      <div class="matter__sticky">
-        <div class="matter__orb" aria-hidden="true"><span></span></div>
-        <p class="eyebrow matter__eyebrow">In case today made you forget—</p>
-        <div class="matter__words" id="matter-title">
-          <p class="matter-line" data-step="0">You.</p>
-          <p class="matter-line" data-step="1">Yes, <em>you.</em></p>
-          <p class="matter-line matter-line--wide" data-step="2">You matter <strong>so much</strong> to me.</p>
-          <p class="matter-line matter-line--wide" data-step="3">You are brilliant, wonderful, and deeply kind.</p>
-          <p class="matter-line matter-line--final" data-step="4">And stronger than this chapter knows.</p>
-        </div>
-        <span class="matter__counter" aria-hidden="true">01 <i></i> 05</span>
-      </div>
-    </section>
-
-    <section class="scene interlude" aria-label="Keep scrolling">
-      <div class="interlude__star" aria-hidden="true">✦</div>
-      <p>There is something waiting<br>just beyond the next scroll…</p>
-      <span>keep going, Shiwali</span>
-      <div class="interlude__line" aria-hidden="true"></div>
-    </section>
-
-    <section class="roses" id="roses" aria-labelledby="roses-title">
+    <section class="roses" id="flowers" aria-labelledby="roses-title">
       <div class="roses__sticky">
         <canvas id="petals-canvas" aria-hidden="true"></canvas>
         <div class="rose-garden" aria-hidden="true"></div>
         <div class="roses__veil" aria-hidden="true"></div>
         <div class="roses__copy">
-          <p class="eyebrow">A garden, entirely yours</p>
-          <h2 id="roses-title">All these<br><em>are for you.</em></h2>
-          <p>And somehow, you are still prettier than every one of them.</p>
+          <p class="kicker">Okay… maybe more than a few</p>
+          <h2 id="roses-title">A whole garden<br><em>for you.</em></h2>
+          <p>One flower for every time you made life kinder, brighter, or beautifully ridiculous.</p>
         </div>
-        <p class="roses__hint">move your cursor through the garden</p>
+        <p class="roses__hint"><span class="desktop-only">move through the garden</span><span class="mobile-only">keep scrolling through your garden</span></p>
       </div>
     </section>
 
-    <section class="scene bloom" id="bloom" aria-labelledby="bloom-title">
-      <div class="bloom-roses" aria-hidden="true"></div>
-      <div class="bloom__aura" aria-hidden="true"></div>
-      <div class="bloom__flower" role="button" tabindex="0" aria-label="Make the flower bloom">
-        <div class="flower-head">
-          <i style="--r:0deg"></i><i style="--r:45deg"></i><i style="--r:90deg"></i><i style="--r:135deg"></i>
-          <i style="--r:180deg"></i><i style="--r:225deg"></i><i style="--r:270deg"></i><i style="--r:315deg"></i>
-          <b></b>
-        </div>
-        <div class="flower-stem"><i></i><i></i></div>
-        <span class="flower-spark flower-spark--1">✦</span>
-        <span class="flower-spark flower-spark--2">✧</span>
-        <span class="flower-spark flower-spark--3">✦</span>
-      </div>
-      <div class="bloom__copy">
-        <p class="eyebrow">These too are for you…</p>
-        <h2 id="bloom-title">You deserve<br><em>it all.</em></h2>
-        <p>Soft days. Loud laughter. Quiet peace.<br>Every beautiful thing finding its way to you.</p>
-        <button class="bloom__button" type="button">touch the flower <span>♡</span></button>
+    <section class="scene bouquet" id="bouquet" aria-labelledby="bouquet-title">
+      <div class="bouquet__field" aria-hidden="true"></div>
+      <div class="bouquet__copy">
+        <p class="kicker">And then some more</p>
+        <h2 id="bouquet-title">Because one garden<br>still didn't feel like <em>enough.</em></h2>
+        <p>May soft days find you. May loud laughter keep you. May every good thing bloom exactly where you are.</p>
+        <button class="bouquet__button" type="button" aria-pressed="false"><span class="bouquet__button-label">make them dance</span> <span class="bouquet__button-spark">✦</span></button>
       </div>
     </section>
 
     <section class="scene finale" id="finale" aria-labelledby="finale-title">
-      <div class="finale__constellation" aria-hidden="true"></div>
+      <div class="finale__stars" aria-hidden="true"></div>
       <article class="letter">
         <span class="letter__tape" aria-hidden="true"></span>
-        <p class="letter__date">for the days that feel a little too heavy</p>
+        <p class="letter__date">For my favourite superwoman</p>
         <h2 id="finale-title">Dear Shiwali,</h2>
-        <p>You have been there for me in ways I will never take for granted. Your brilliance inspires me, your kindness stays with me, and your friendship means more than these words can hold.</p>
-        <p>A difficult chapter is still only a chapter. It is not the whole story—and it could never dim the person you are.</p>
-        <p class="letter__big">The world is lovelier with you in it.</p>
-        <p class="letter__sign">Your friend, always<br><span>♡</span></p>
+        <p>You have been there for me in ways I will never take for granted. Your strength inspires me, your kindness stays with me, and your friendship means more than these words can hold.</p>
+        <p>Whenever life feels heavy, remember: a difficult chapter is still only a chapter. It is not the whole story, and it could never dim the force of nature you are.</p>
+        <p class="letter__big">You are loved. You are extraordinary.<br>And you never have to save the world alone.</p>
+        <p class="letter__sign">Your friend, always<br><span>— Prawin ♡</span></p>
       </article>
-      <button class="replay" type="button"><span>↻</span> once more</button>
-      <p class="finale__whisper">made with an unreasonable amount of admiration <span>— Prawin</span></p>
+      <button class="replay" type="button"><span>↻</span> fly through it again</button>
+      <p class="finale__whisper">made with flowers, friendship, and an unreasonable amount of admiration</p>
     </section>
   </main>
 
-  <noscript><p class="noscript">Shiwali, you matter more than you know—and this little page was made to remind you.</p></noscript>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="js/three-bg.js"></script>
-  <script src="js/petals.js"></script>
-  <script src="js/main.js?v=5"></script>
+  <noscript><p class="noscript">Shiwali, you are strong, wonderful, deeply loved—and this garden is all yours.</p></noscript>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="js/petals.js?v=3"></script>
+  <script defer src="js/main.js?v=10"></script>
 </body>
 </html>
